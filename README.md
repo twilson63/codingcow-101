@@ -30,6 +30,12 @@ To work through the tutorial, all you should have to do is to clone this project
 
 > Then do what the cow says!
 
+## Reset Slide Show
+
+```
+./r
+```
+
 Enjoy!
 
 
