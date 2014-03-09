@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var cowsay = './.cowsay';
+var exec = require('child_process').exec;
+
+exec('clear', function(err, stdout) {
+  console.log(stdout);
+});
+
+if (!fs.existsSync(cowsay)) {
+  fs.writeFileSync(cowsay, '1');
+}
+var slide = fs.readFileSync(cowsay).toString();
+fs.writeFileSync(cowsay, (parseInt(slide, 10) + 1).toString());
+exec('cowsay < ' + slide, function(err, stdout) {
+  console.log(stdout);
+});
+
