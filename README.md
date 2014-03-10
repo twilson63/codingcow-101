@@ -1,15 +1,6 @@
 # Coding Cow Presents
 
 # Browserify and Beefy - Getting Started
-
-To run the tutorial yourself, make sure you have cowsay installed and available:
-
-```
-echo 'Hello World' | cowsay
-```
-
-This command should show a cow with a bubble.
-
 ```
  _____________
 < Hello World >
@@ -25,6 +16,7 @@ This command should show a cow with a bubble.
 To work through the tutorial, all you should have to do is to clone this project cd into it and type:
 
 ```
+npm install
 ./n
 ```
 
